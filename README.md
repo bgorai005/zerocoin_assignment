@@ -7,7 +7,7 @@ This project performs GPU-accelerated image enhancement using **OpenCL**. It app
 ---
 
 ## 📂 Project Structure
----
+```
 gpu_image_enhancer/
 ├── images/
 │ ├── input.png # Sample input image
@@ -23,7 +23,7 @@ gpu_image_enhancer/
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
----
+```
 
 ## ⚙️ Requirements
 
