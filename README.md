@@ -61,8 +61,9 @@ python src/main.py --input images/input.png --output images/output.png --luminan
 - luminance: Maximum luminance (e.g., 1.0, 5.0, 10.0)
 
 ## References
-- PyOpenCL Documentation
-- OpenCL Specification
+- [PyOpenCL Documentation](https://documen.tician.de/pyopencl/)
+- [Articles by rainbow research group](https://www.cl.cam.ac.uk/teaching/1819/AdvGraphIP/03_OpenCL.pdf)
+  
 
 
 
