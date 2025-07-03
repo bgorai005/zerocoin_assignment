@@ -33,16 +33,16 @@ gpu_image_enhancer/
 
 ---
 
-## 💻 Setup Instructions
+##  Setup Instructions
 
-### ✅ Prerequisites
+###  Prerequisites
 
 - Python 3.8+
 - OpenCL-capable system (CPU or GPU with drivers installed)
 - Conda or pip
 - [PoCL (Portable OpenCL)](http://portablecl.org/) if no vendor OpenCL driver is present
 
-### 📦 Setup (via Conda – Recommended)
+###  Setup (via Conda – Recommended)
 
 ```bash
 # Step 1: Create virtual environment
@@ -52,10 +52,19 @@ conda activate openclenv
 # Step 2: Install dependencies
 pip install -r requirements.txt
 ```
-# For Run
+## How to Run
 ```bash
 python src/main.py --input images/input.png --output images/output.png --luminance 5.0
 ```
+- input: Path to input image (must be RGBA .png)
+- output: Output path
+- luminance: Maximum luminance (e.g., 1.0, 5.0, 10.0)
+
+## References
+- PyOpenCL Documentation
+- OpenCL Specification
+
+
 
 
 
