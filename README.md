@@ -51,8 +51,13 @@ conda activate openclenv
 
 # Step 2: Install dependencies
 pip install -r requirements.txt
-
-
-# Install dependencies
-pip install -r requirements.txt
+```
+# For Run
+```bash
 python src/main.py --input images/input.png --output images/output.png --luminance 5.0
+```
+
+
+
+
+
