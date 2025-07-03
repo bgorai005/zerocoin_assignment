@@ -9,20 +9,17 @@ This project performs GPU-accelerated image enhancement using **OpenCL**. It app
 ## 📂 Project Structure
 ---
 gpu_image_enhancer/
-│
 ├── images/
 │ ├── input.png # Sample input image
 │ └── output.png # Output after processing
 │
 ├── kernels/
 │ └── filters.cl # OpenCL C kernels (Gaussian blur + tone mapping)
-│
 ├── src/
 │ ├── main.py # CLI entry point to run the image processor
 │ ├── image_processor.py # Core processing logic (GPU pipeline)
 │ ├── opencl_setup.py # Platform, device, and program setup
 │ └── utils.py # Image loading/saving helper functions
-│
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
