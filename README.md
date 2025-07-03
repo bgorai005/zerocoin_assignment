@@ -1,4 +1,4 @@
-# 🖼️ GPU Image Enhancer (OpenCL)
+# 🖼 GPU Image Enhancer (OpenCL)
 
 This project performs GPU-accelerated image enhancement using **OpenCL**. It applies a two-stage pipeline:
 1. **Gaussian Blur** – to reduce noise and smooth the image.
@@ -7,7 +7,7 @@ This project performs GPU-accelerated image enhancement using **OpenCL**. It app
 ---
 
 ## 📂 Project Structure
-
+---
 gpu_image_enhancer/
 │
 ├── images/
