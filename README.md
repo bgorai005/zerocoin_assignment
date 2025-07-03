@@ -1,12 +1,18 @@
-# 🖼 GPU Image Enhancer (OpenCL)
+#  GPU Image Enhancement using OpenCL
 
-This project performs GPU-accelerated image enhancement using **OpenCL**. It applies a two-stage pipeline:
-1. **Gaussian Blur** – to reduce noise and smooth the image.
-2. **Logarithmic Tone Mapping** – to enhance contrast and dynamic range.
+---
+##  Overview
+
+This project demonstrates GPU-accelerated image enhancement using **OpenCL** with **PyOpenCL** in Python. The image is processed through **two OpenCL kernels**:
+
+1. **3x3 Gaussian Blur:** Smooths the image and reduces noise per RGB channel.
+2. **Logarithmic Tone Mapping:** Enhances contrast by applying a perceptually motivated tone-mapping function on luminance.
+
+The final image is saved after both stages, showcasing the power of parallel GPU execution for image processing.
 
 ---
 
-## 📂 Project Structure
+##  Repository  Structure
 ```
 gpu_image_enhancer/
 ├── images/
@@ -25,19 +31,27 @@ gpu_image_enhancer/
 
 ```
 
-## ⚙️ Requirements
+---
+
+## 💻 Setup Instructions
+
+### ✅ Prerequisites
 
 - Python 3.8+
-- Conda (recommended) or pip
-- OpenCL runtime (PoCL or vendor-specific)
-- A device with OpenCL support (e.g., CPU with PoCL, or GPU)
+- OpenCL-capable system (CPU or GPU with drivers installed)
+- Conda or pip
+- [PoCL (Portable OpenCL)](http://portablecl.org/) if no vendor OpenCL driver is present
 
-Install dependencies:
+### 📦 Setup (via Conda – Recommended)
 
 ```bash
-# Create and activate conda environment
+# Step 1: Create virtual environment
 conda create -n openclenv python=3.10 -c conda-forge
 conda activate openclenv
+
+# Step 2: Install dependencies
+pip install -r requirements.txt
+
 
 # Install dependencies
 pip install -r requirements.txt
