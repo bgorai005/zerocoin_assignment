@@ -16,10 +16,10 @@ gpu_image_enhancer/
 ├── kernels/
 │ └── filters.cl # OpenCL C kernels (Gaussian blur + tone mapping)
 ├── src/
-│ ├── main.py # CLI entry point to run the image processor
 │ ├── image_processor.py # Core processing logic (GPU pipeline)
 │ ├── opencl_setup.py # Platform, device, and program setup
 │ └── utils.py # Image loading/saving helper functions
+├── main.py # CLI entry point to run the image processor
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
